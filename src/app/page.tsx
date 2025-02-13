@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import "./globals.css";
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1, transition: { duration: 0.75 } }}
       transition={{ ease: "easeInOut", duration: 0.75 }}
-      className="w-full flex justify-center items-center"
+      className="container"
     >
       <motion.h3
         whileHover={{
@@ -15,7 +16,6 @@ export default function Home() {
           transition: { duration: 0.8 },
         }}
         whileTap={{ scale: 0.9 }}
-        className="md:text-lg text-sm cursor-pointer font-medium md:font-bold"
       >
         Hello World
       </motion.h3>
