@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   box-sizing: border-box;
 }
@@ -5,6 +9,11 @@
 body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .container {
@@ -13,7 +22,18 @@ body {
   justify-content: center;
 }
 
-.container h3{
-    color: green;
-    margin: 2px;
+.container h3 {
+  color: green;
+  margin: 2px;
+}
+
+footer p{
+  color:"white";
+}
+
+.link-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px; 
 }
