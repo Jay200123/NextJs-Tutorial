@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import "./globals.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -18,6 +19,13 @@ export default function Home() {
         whileTap={{ scale: 0.9 }}
       >
         Hello World
+        <div className="link-container">
+        <Link href="/products" replace>Products</Link>
+        <Link href="/albums" replace>Albums</Link>
+        <Link href="/blog" replace>Blog</Link>
+        <Link href="/post" replace>Post</Link>
+        </div>
+       
       </motion.h3>
     </motion.div>
   );
