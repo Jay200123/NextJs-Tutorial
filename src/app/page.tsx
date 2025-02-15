@@ -2,8 +2,11 @@
 import { motion } from "framer-motion";
 import "./globals.css";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter(); 
+
   return (
     <motion.div
       initial={{ y: 100, opacity: 0 }}
@@ -24,6 +27,14 @@ export default function Home() {
         <Link href="/albums" replace>Albums</Link>
         <Link href="/blog" replace>Blog</Link>
         <Link href="/post" replace>Post</Link>
+        </div>
+
+        <div className="link-container">
+          <ul>
+            <li onClick={()=> router.replace("/login")}>Login</li>
+            <li onClick={()=> router.replace("/register")}>Register</li>
+
+          </ul>
         </div>
        
       </motion.h3>
