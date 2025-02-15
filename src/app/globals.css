@@ -37,3 +37,7 @@ footer p{
   justify-content: center;
   margin-top: 20px; 
 }
+
+.auth-container{
+  background-color: aqua;
+}
